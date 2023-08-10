@@ -1,0 +1,11 @@
+HeaderName header.txt
+IndexIgnore .htaccess header.txt readme.txt RCS .acl
+ReadmeName readme.txt
+
+AuthType CAS
+
+Require unix-group intranet-staff intranet-faculty acat abetintra
+
+<FilesMatch "\.xpi$">
+  Header set Content-Disposition attachment
+</FilesMatch>
